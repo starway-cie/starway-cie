@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Offres — Starway</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header class="header">
+  <div class="container nav">
+    <a class="brand" href="index.html" aria-label="Starway">
+      <span class="brandMark" aria-hidden="true">★</span>
+      <span class="brandName">STARWAY</span>
+    </a>
+    <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="menu" id="menu">
+      <a href="index.html">Accueil</a>
+      <a href="realisations.html">Réalisations</a>
+      <a class="active" href="offres.html">Offres</a>
+      <a href="contact.html" class="btn btn-sm">Devis</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="section sectionAlt">
+    <div class="container">
+      <div class="sectionHead">
+        <h2>Offres</h2>
+        <p>Trois approches. Le prix final dépend du lieu, de la durée, du nombre de drones et des contraintes.</p>
+      </div>
+
+      <div class="pricing">
+        <article class="priceCard">
+          <div class="tag">Essential</div>
+          <h3>Show Signature</h3>
+          <p class="priceNote">Format court, impact fort</p>
+          <ul>
+            <li>1 séquence signature</li>
+            <li>Conception + préparation</li>
+            <li>Sécurité + exécution</li>
+          </ul>
+          <a class="btn btn-ghost" href="contact.html">Demander une estimation</a>
+        </article>
+
+        <article class="priceCard featured">
+          <div class="tag">Best seller</div>
+          <h3>Brand / Festival</h3>
+          <p class="priceNote">Sur-mesure + narration</p>
+          <ul>
+            <li>Storyboard + tableaux</li>
+            <li>Musique synchronisée</li>
+            <li>Coordination terrain</li>
+          </ul>
+          <a class="btn" href="contact.html">Demander un devis</a>
+        </article>
+
+        <article class="priceCard">
+          <div class="tag">Premium</div>
+          <h3>Grand Spectacle</h3>
+          <p class="priceNote">Cinématique & grand public</p>
+          <ul>
+            <li>Animations avancées</li>
+            <li>Effets 3D</li>
+            <li>Option captation</li>
+          </ul>
+          <a class="btn btn-ghost" href="contact.html">Parler au chef d’orchestre</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footerRow">
+      <div>© <span id="year"></span> Starway — Drone Shows</div>
+      <div class="footerLinks">
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

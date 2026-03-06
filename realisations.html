@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Réalisations — Starway</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header class="header">
+  <div class="container nav">
+    <a class="brand" href="index.html" aria-label="Starway">
+      <span class="brandMark" aria-hidden="true">★</span>
+      <span class="brandName">STARWAY</span>
+    </a>
+    <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="menu" id="menu">
+      <a href="index.html">Accueil</a>
+      <a class="active" href="realisations.html">Réalisations</a>
+      <a href="offres.html">Offres</a>
+      <a href="contact.html" class="btn btn-sm">Devis</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="section">
+    <div class="container">
+      <div class="sectionHead">
+        <h2>Réalisations</h2>
+        <p>Photos/vidéos de shows, concepts et formats. Remplace les images par les tiennes.</p>
+      </div>
+
+      <div class="gallery">
+        <figure class="ph"><img src="assets/show1.jpg" alt="Show Starway 1"></figure>
+        <figure class="ph"><img src="assets/show2.jpg" alt="Show Starway 2"></figure>
+        <figure class="ph"><img src="assets/show3.jpg" alt="Show Starway 3"></figure>
+      </div>
+
+      <div style="height:22px"></div>
+
+      <div class="cards">
+        <article class="card">
+          <h3>Format Ville</h3>
+          <p>Ouverture + final, message institutionnel, musique synchronisée.</p>
+        </article>
+        <article class="card">
+          <h3>Format Marque</h3>
+          <p>Logo + reveal produit, transitions rapides, rendu “social-first”.</p>
+        </article>
+        <article class="card">
+          <h3>Format Premium</h3>
+          <p>Storytelling émotionnel, tableaux élégants, moment signature.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footerRow">
+      <div>© <span id="year"></span> Starway — Drone Shows</div>
+      <div class="footerLinks">
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

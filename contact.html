@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — Starway</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header class="header">
+  <div class="container nav">
+    <a class="brand" href="index.html" aria-label="Starway">
+      <span class="brandMark" aria-hidden="true">★</span>
+      <span class="brandName">STARWAY</span>
+    </a>
+    <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="menu" id="menu">
+      <a href="index.html">Accueil</a>
+      <a href="realisations.html">Réalisations</a>
+      <a href="offres.html">Offres</a>
+      <a class="active btn btn-sm" href="contact.html">Devis</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="section">
+    <div class="container">
+      <div class="sectionHead">
+        <h2>Demande de devis</h2>
+        <p>Réponse rapide. Questions claires. Pas de poésie administrative.</p>
+      </div>
+
+      <div class="contactGrid">
+        <form class="form" id="quoteForm">
+          <div class="row">
+            <label>Nom / Société
+              <input name="name" autocomplete="name" required />
+            </label>
+            <label>Email
+              <input type="email" name="email" autocomplete="email" required />
+            </label>
+          </div>
+
+          <div class="row">
+            <label>Date (approx.)
+              <input type="text" name="date" placeholder="Ex : 15/08/2026" />
+            </label>
+            <label>Lieu
+              <input name="location" placeholder="Ex : Lyon, stade, bord de lac…" />
+            </label>
+          </div>
+
+          <label>Votre besoin
+            <textarea name="message" rows="6" required placeholder="Public, objectif, durée, idées (logo/texte), contraintes du site…"></textarea>
+          </label>
+
+          <button class="btn" type="submit">Envoyer la demande</button>
+          <p class="micro">Ce formulaire ouvre votre client mail. Vous pouvez aussi écrire à <strong>nathanvillain25@gmail.com</strong>.</p>
+        </form>
+
+        <aside class="contactAside">
+          <div class="panel">
+            <h3>Coordonnées</h3>
+            <p><strong>Email</strong> : nathanvillain25@gmail.com<br/>
+               <strong>Tél.</strong> : +33 6 45 73 16 24<br/>
+               <strong>Zone</strong> : France / Europe (sur demande)</p>
+          </div>
+
+          <div class="panel">
+            <h3>Pour un devis rapide</h3>
+            <ul class="bullets">
+              <li>Date + créneau</li>
+              <li>Adresse précise</li>
+              <li>Type d’événement</li>
+              <li>Objectif (branding, artistique…)</li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footerRow">
+      <div>© <span id="year"></span> Starway — Drone Shows</div>
+      <div class="footerLinks">
+        <a href="index.html">Accueil</a>
+      </div>
+    </div>
+  </footer>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
